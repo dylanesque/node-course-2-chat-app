@@ -40,7 +40,7 @@ socket.on('updateUserList', function (users) {
     ol.append(jQuery('<li></li>').text(user));
   });
 
-  jQuery('#users').html(ol);
+  jQuery('.users').html(ol);
 });
 
 socket.on('newMessage', function(message) {
